@@ -9,7 +9,30 @@ void display(vector<int>&a){
     cout<<endl;
 }
 
-void sort012
+void swapValues8(int i,int j,vector<int>&v){
+    int temp;
+    temp=v[i];
+    v[i]=v[j];
+    v[j]=temp;
+}
+void sort012(vector<int>&v){
+    int lo=0;
+    int mid=0;
+    int hi=v.size()-1;
+    while(mid<=hi){
+        if(v[mid]==2){
+            swapValues8(mid,hi,v);
+            hi--;
+        }
+        else if (v[mid]==0){
+            swapValues8(lo,mid,v);
+            mid++;
+            lo++;
+        }
+        else mid++;
+    }
+    
+}
 
 int main(){
     vector<int>v;
@@ -22,6 +45,10 @@ int main(){
         cin>>q;
         v.push_back(q);
     }
-    display(v);
+        display(v);
+
+    sort012(v);
+        display(v);
+
 
 }
