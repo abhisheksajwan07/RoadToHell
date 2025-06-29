@@ -36,7 +36,7 @@ int main(){
         v.push_back(q);
     }
     display(v);
-    sort012(v);
+    sort01(v);
     // sort 1 1 0 0 1 1 0 1
     display(v);
 
