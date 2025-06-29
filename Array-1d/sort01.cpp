@@ -8,7 +8,7 @@ void display(vector<int>&a){
   }
   cout<<endl;
 }
-void sort012(vector<int>&v){
+void sort01(vector<int>&v){
     int n=v.size();
     int i=0;
     int j=n-1;
