@@ -34,11 +34,17 @@ void nextPermutation(vector<int>&v){
             break;
         }
     }
-    // j = 3
     int temp = v[idx];
     v[idx]=v[j];
     v[j]=temp;
     return;
+
+    //   for(int i = idx + 1; i < n; i++){
+    //     if(v[i] > v[idx]){
+    //         swap(v[i], v[idx]);
+    //         break;
+    //     }
+    // }
 }
 int main(){
     vector<int>v;
